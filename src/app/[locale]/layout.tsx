@@ -5,6 +5,8 @@ import { locales, type Locale } from "@/i18n/config";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
+export const runtime = 'edge';
+
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }

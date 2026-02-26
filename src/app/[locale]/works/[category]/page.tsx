@@ -7,6 +7,8 @@ import { urlFor } from "@/sanity/image";
 import { type Locale } from "@/i18n/config";
 import { WORK_CATEGORIES } from "@/sanity/schemas/work";
 
+export const runtime = 'edge';
+
 const validCategories = WORK_CATEGORIES.map((c) => c.value);
 
 export async function generateMetadata({

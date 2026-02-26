@@ -7,6 +7,8 @@ import { urlFor } from "@/sanity/image";
 import PortableTextRenderer from "@/components/PortableTextRenderer";
 import { type Locale } from "@/i18n/config";
 
+export const runtime = 'edge';
+
 function formatDate(dateStr?: string) {
   if (!dateStr) return "";
   return new Date(dateStr).toLocaleDateString("en-GB", {

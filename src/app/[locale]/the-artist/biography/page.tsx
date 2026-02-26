@@ -5,6 +5,8 @@ import { urlFor } from "@/sanity/image";
 import PortableTextRenderer from "@/components/PortableTextRenderer";
 import { type Locale } from "@/i18n/config";
 
+export const runtime = 'edge';
+
 export async function generateMetadata() {
   return { title: "Biography" };
 }
