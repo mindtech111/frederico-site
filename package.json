@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "pages:build": "next build && npx opennextjs-cloudflare build"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "^1.17.1",
     "@sanity/client": "^7.16.0",
     "@sanity/image-url": "^2.0.3",
     "@sanity/vision": "^5.12.0",
@@ -20,7 +22,6 @@
     "sanity": "^5.12.0"
   },
   "devDependencies": {
-    "@opennextjs/cloudflare": "^1.17.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
