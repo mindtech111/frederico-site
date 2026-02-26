@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "theArtist": "O Artista",
+    "biography": "Biografia",
+    "cv": "CV",
+    "chronology": "Cronologia",
+    "works": "Obras",
+    "paintings": "Pinturas",
+    "drawings": "Desenhos",
+    "sculptures": "Esculturas",
+    "photography": "Fotografia",
+    "prints": "Gravuras",
+    "videos": "Vídeos",
+    "exhibitions": "Exposições",
+    "press": "Imprensa",
+    "news": "Notícias",
+    "contact": "Contato"
+  },
+  "home": {
+    "viewWork": "Ver Obra"
+  },
+  "works": {
+    "title": "Obras",
+    "allWorks": "Todas as Obras",
+    "noWorks": "Nenhuma obra encontrada nesta categoria."
+  },
+  "exhibitions": {
+    "title": "Exposições",
+    "solo": "Exposição Individual",
+    "group": "Exposição Coletiva",
+    "fair": "Feira de Arte",
+    "current": "Atual",
+    "upcoming": "Próximas",
+    "past": "Passadas"
+  },
+  "press": {
+    "title": "Imprensa",
+    "readMore": "Ler mais",
+    "downloadPdf": "Baixar PDF",
+    "review": "Crítica",
+    "interview": "Entrevista",
+    "feature": "Reportagem",
+    "catalogue": "Texto de Catálogo",
+    "book": "Livro"
+  },
+  "news": {
+    "title": "Notícias"
+  },
+  "artist": {
+    "biography": "Biografia",
+    "cv": "CV",
+    "chronology": "Cronologia"
+  },
+  "contact": {
+    "title": "Contato",
+    "email": "E-mail",
+    "studio": "Ateliê",
+    "representation": "Representação em Galerias",
+    "followUs": "Seguir"
+  },
+  "common": {
+    "backToWorks": "Voltar às Obras",
+    "backToExhibitions": "Voltar às Exposições",
+    "seeAll": "Ver tudo"
+  }
+}

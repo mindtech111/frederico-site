@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "theArtist": "The Artist",
+    "biography": "Biography",
+    "cv": "CV",
+    "chronology": "Chronology",
+    "works": "Works",
+    "paintings": "Paintings",
+    "drawings": "Drawings",
+    "sculptures": "Sculptures",
+    "photography": "Photography",
+    "prints": "Prints",
+    "videos": "Videos",
+    "exhibitions": "Exhibitions",
+    "press": "Press",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "home": {
+    "viewWork": "View Work"
+  },
+  "works": {
+    "title": "Works",
+    "allWorks": "All Works",
+    "noWorks": "No works found in this category."
+  },
+  "exhibitions": {
+    "title": "Exhibitions",
+    "solo": "Solo Exhibition",
+    "group": "Group Exhibition",
+    "fair": "Art Fair",
+    "current": "Current",
+    "upcoming": "Upcoming",
+    "past": "Past"
+  },
+  "press": {
+    "title": "Press",
+    "readMore": "Read more",
+    "downloadPdf": "Download PDF",
+    "review": "Review",
+    "interview": "Interview",
+    "feature": "Feature",
+    "catalogue": "Catalogue Essay",
+    "book": "Book"
+  },
+  "news": {
+    "title": "News"
+  },
+  "artist": {
+    "biography": "Biography",
+    "cv": "CV",
+    "chronology": "Chronology"
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "Email",
+    "studio": "Studio",
+    "representation": "Gallery Representation",
+    "followUs": "Follow"
+  },
+  "common": {
+    "backToWorks": "Back to Works",
+    "backToExhibitions": "Back to Exhibitions",
+    "seeAll": "See all"
+  }
+}
