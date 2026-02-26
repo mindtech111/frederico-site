@@ -3,8 +3,6 @@ import { getHomepageImages } from "@/lib/queries";
 import HomeCarousel from "@/components/HomeCarousel";
 import { type Locale } from "@/i18n/config";
 
-export const runtime = 'edge';
-
 export default async function HomePage({
   params,
 }: {

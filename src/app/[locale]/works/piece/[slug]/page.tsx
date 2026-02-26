@@ -7,8 +7,6 @@ import { urlFor } from "@/sanity/image";
 import PortableTextRenderer from "@/components/PortableTextRenderer";
 import { type Locale } from "@/i18n/config";
 
-export const runtime = 'edge';
-
 export default async function WorkDetailPage({
   params,
 }: {

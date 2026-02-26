@@ -3,8 +3,6 @@ import { getContact } from "@/lib/queries";
 import PortableTextRenderer from "@/components/PortableTextRenderer";
 import { type Locale } from "@/i18n/config";
 
-export const runtime = 'edge';
-
 export async function generateMetadata() {
   return { title: "Contact" };
 }

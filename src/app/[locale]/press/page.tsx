@@ -4,8 +4,6 @@ import { getPress } from "@/lib/queries";
 import { urlFor } from "@/sanity/image";
 import { type Locale } from "@/i18n/config";
 
-export const runtime = 'edge';
-
 export async function generateMetadata() {
   return { title: "Press" };
 }

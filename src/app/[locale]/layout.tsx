@@ -5,8 +5,6 @@ import { locales, type Locale } from "@/i18n/config";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-export const runtime = 'edge';
-
 export default async function LocaleLayout({
   children,
   params,

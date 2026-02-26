@@ -2,8 +2,6 @@ import { getTranslations } from "next-intl/server";
 import { getArtist } from "@/lib/queries";
 import { type Locale } from "@/i18n/config";
 
-export const runtime = 'edge';
-
 export async function generateMetadata() {
   return { title: "Chronology" };
 }
