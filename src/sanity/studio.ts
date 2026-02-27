@@ -33,6 +33,7 @@ export const studioConfig = defineConfig({
                   .title("Works by Category")
                   .items([
                     S.listItem().title("All Works").child(S.documentTypeList("work")),
+                    S.listItem().title("Texts").child(S.documentTypeList("textEntry").title("Texts")),
                     S.divider(),
                     ...[
                       { title: "Paintings", value: "paintings" },

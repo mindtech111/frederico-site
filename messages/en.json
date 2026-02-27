@@ -5,6 +5,7 @@
     "cv": "CV",
     "chronology": "Chronology",
     "works": "Works",
+    "texts": "Texts",
     "paintings": "Paintings",
     "drawings": "Drawings",
     "sculptures": "Sculptures",
@@ -42,6 +43,10 @@
     "feature": "Feature",
     "catalogue": "Catalogue Essay",
     "book": "Book"
+  },
+  "texts": {
+    "title": "Texts",
+    "noTexts": "No texts published yet."
   },
   "news": {
     "title": "News"

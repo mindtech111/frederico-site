@@ -49,6 +49,25 @@ export async function getWorkBySlug(slug: string) {
   );
 }
 
+// ─── Texts ──────────────────────────────────────────────────────────────────
+
+export async function getTexts() {
+  return client.fetch(
+    `*[_type == "textEntry"] | order(date desc) {
+      _id, title, slug, date, author, body, image
+    }`
+  );
+}
+
+export async function getTextBySlug(slug: string) {
+  return client.fetch(
+    `*[_type == "textEntry" && slug.current == $slug][0] {
+      _id, title, slug, date, author, body, image
+    }`,
+    { slug }
+  );
+}
+
 // ─── Exhibitions ─────────────────────────────────────────────────────────────
 
 export async function getExhibitions() {

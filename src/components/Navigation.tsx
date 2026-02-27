@@ -25,6 +25,7 @@ export default function Navigation({ locale }: Props) {
     pathname === path || pathname.startsWith(`${path}/`);
 
   const workCategories = [
+    { key: "texts", href: "/works/texts" },
     { key: "paintings", href: "/works/paintings" },
     { key: "drawings", href: "/works/drawings" },
     { key: "sculptures", href: "/works/sculptures" },

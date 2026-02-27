@@ -1,4 +1,5 @@
 import { PortableText, type PortableTextBlock } from "next-sanity";
+import { urlFor } from "@/sanity/image";
 
 interface Props {
   value: PortableTextBlock[];
@@ -6,6 +7,27 @@ interface Props {
 }
 
 const components = {
+  types: {
+    image: ({
+      value,
+    }: {
+      value: { asset: { _ref: string }; caption?: string };
+    }) => (
+      <figure className="my-8">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={urlFor(value).width(1200).quality(85).url()}
+          alt={value.caption || ""}
+          className="w-full h-auto"
+        />
+        {value.caption && (
+          <figcaption className="font-sans text-[12px] text-[var(--color-text-muted)] mt-2">
+            {value.caption}
+          </figcaption>
+        )}
+      </figure>
+    ),
+  },
   block: {
     normal: ({ children }: { children?: React.ReactNode }) => (
       <p className="mb-5 last:mb-0 leading-relaxed">{children}</p>

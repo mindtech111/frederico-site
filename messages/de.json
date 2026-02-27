@@ -5,6 +5,7 @@
     "cv": "Lebenslauf",
     "chronology": "Chronologie",
     "works": "Werke",
+    "texts": "Texte",
     "paintings": "Gemälde",
     "drawings": "Zeichnungen",
     "sculptures": "Skulpturen",
@@ -42,6 +43,10 @@
     "feature": "Bericht",
     "catalogue": "Katalogessay",
     "book": "Buch"
+  },
+  "texts": {
+    "title": "Texte",
+    "noTexts": "Noch keine Texte veröffentlicht."
   },
   "news": {
     "title": "Neuigkeiten"
