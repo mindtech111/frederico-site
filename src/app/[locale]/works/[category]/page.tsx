@@ -5,7 +5,7 @@ import { getTranslations } from "next-intl/server";
 import { getWorksByCategory } from "@/lib/queries";
 import { urlFor } from "@/sanity/image";
 import { type Locale } from "@/i18n/config";
-import { WORK_CATEGORIES } from "@/sanity/schemas/work";
+import { WORK_CATEGORIES } from "@/lib/constants";
 
 const validCategories = WORK_CATEGORIES.map((c) => c.value);
 

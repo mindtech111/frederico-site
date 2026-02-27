@@ -1,13 +1,5 @@
 import { defineType, defineField } from "sanity";
-
-export const WORK_CATEGORIES = [
-  { title: "Paintings", value: "paintings" },
-  { title: "Drawings", value: "drawings" },
-  { title: "Sculptures", value: "sculptures" },
-  { title: "Photography", value: "photography" },
-  { title: "Prints", value: "prints" },
-  { title: "Videos", value: "videos" },
-];
+import { WORK_CATEGORIES } from "@/lib/constants";
 
 export const work = defineType({
   name: "work",
