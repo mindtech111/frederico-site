@@ -2,6 +2,11 @@ name = "frederico-theophilo-neto"
 main = ".open-next/worker.js"
 compatibility_date = "2025-05-05"
 compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+routes = [
+  { pattern = "fredericotheophiloneto.com", custom_domain = true },
+  { pattern = "www.fredericotheophiloneto.com", custom_domain = true },
+]
 
 [assets]
 directory = ".open-next/assets"
