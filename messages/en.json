@@ -63,6 +63,15 @@
     "representation": "Gallery Representation",
     "followUs": "Follow"
   },
+  "newsletter": {
+    "title": "Stay Updated",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Your email",
+    "submit": "Subscribe",
+    "success": "Thank you for subscribing!",
+    "error": "Something went wrong. Please try again.",
+    "duplicate": "This email is already subscribed."
+  },
   "common": {
     "backToWorks": "Back to Works",
     "backToExhibitions": "Back to Exhibitions",

@@ -7,6 +7,7 @@ import { textEntry } from "./textEntry";
 import { homepageImage } from "./homepageImage";
 import { homepageHero } from "./homepageHero";
 import { contact } from "./contact";
+import { subscriber } from "./subscriber";
 
 export const schemaTypes = [
   homepageHero,
@@ -18,4 +19,5 @@ export const schemaTypes = [
   news,
   artist,
   contact,
+  subscriber,
 ];

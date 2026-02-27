@@ -63,6 +63,15 @@
     "representation": "Representação em Galerias",
     "followUs": "Seguir"
   },
+  "newsletter": {
+    "title": "Fique por dentro",
+    "namePlaceholder": "Seu nome",
+    "emailPlaceholder": "Seu e-mail",
+    "submit": "Inscrever-se",
+    "success": "Obrigado por se inscrever!",
+    "error": "Algo deu errado. Tente novamente.",
+    "duplicate": "Este e-mail já está inscrito."
+  },
   "common": {
     "backToWorks": "Voltar às Obras",
     "backToExhibitions": "Voltar às Exposições",

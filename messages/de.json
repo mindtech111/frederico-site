@@ -63,6 +63,15 @@
     "representation": "Galerievertretung",
     "followUs": "Folgen"
   },
+  "newsletter": {
+    "title": "Auf dem Laufenden bleiben",
+    "namePlaceholder": "Ihr Name",
+    "emailPlaceholder": "Ihre E-Mail",
+    "submit": "Abonnieren",
+    "success": "Vielen Dank für Ihre Anmeldung!",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "duplicate": "Diese E-Mail ist bereits angemeldet."
+  },
   "common": {
     "backToWorks": "Zurück zu den Werken",
     "backToExhibitions": "Zurück zu den Ausstellungen",

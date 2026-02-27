@@ -74,6 +74,10 @@ export const studioConfig = defineConfig({
                   .schemaType("contact")
                   .documentId("contact-singleton")
               ),
+            S.divider(),
+            S.listItem()
+              .title("Subscribers")
+              .child(S.documentTypeList("subscriber").title("Subscribers")),
           ]),
     }),
     visionTool(),
