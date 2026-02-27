@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  serverExternalPackages: ["sanity", "@sanity/vision"],
 };
 
 export default withNextIntl(nextConfig);
