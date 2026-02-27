@@ -16,6 +16,13 @@ export const studioConfig = defineConfig({
           .title("Content")
           .items([
             S.listItem()
+              .title("Homepage Hero")
+              .child(
+                S.document()
+                  .schemaType("homepageHero")
+                  .documentId("homepage-hero-singleton")
+              ),
+            S.listItem()
               .title("Homepage Carousel")
               .child(S.documentTypeList("homepageImage")),
             S.divider(),

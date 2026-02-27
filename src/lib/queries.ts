@@ -1,5 +1,19 @@
 import { client } from "@/sanity/client";
 
+// ─── Homepage Hero ───────────────────────────────────────────────────────────
+
+export async function getHomepageHero() {
+  return client.fetch(
+    `*[_type == "homepageHero" && _id == "homepage-hero-singleton"][0] {
+      heroType,
+      "videoUrl": video.asset->url,
+      posterImage,
+      caption,
+      workReference->{ "slug": slug.current, "category": category }
+    }`
+  );
+}
+
 // ─── Homepage ────────────────────────────────────────────────────────────────
 
 export async function getHomepageImages() {
