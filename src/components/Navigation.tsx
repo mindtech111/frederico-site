@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useCallback } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { type Locale, localeNames } from "@/i18n/config";
 import { Link, usePathname } from "@/i18n/navigation";
@@ -63,9 +64,16 @@ export default function Navigation({ locale }: Props) {
         {/* Logo / Name */}
         <Link
           href="/"
-          className="font-serif text-sm tracking-wide hover:opacity-70 transition-opacity"
+          className="hover:opacity-70 transition-opacity"
         >
-          Frederico Theophilo Neto
+          <Image
+            src="/logo.png"
+            alt="Frederico Theophilo Neto"
+            width={220}
+            height={50}
+            className="h-8 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
