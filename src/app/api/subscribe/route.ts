@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { writeClient } from "@/sanity/writeClient";
+import { getWriteClient } from "@/sanity/writeClient";
 
 export async function POST(request: NextRequest) {
   try {
@@ -23,8 +23,10 @@ export async function POST(request: NextRequest) {
     const trimmedEmail = email.trim().toLowerCase();
     const trimmedName = name.trim();
 
+    const client = getWriteClient();
+
     // Check for duplicate email
-    const existing = await writeClient.fetch(
+    const existing = await client.fetch(
       `count(*[_type == "subscriber" && email == $email])`,
       { email: trimmedEmail }
     );
@@ -37,7 +39,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Create subscriber document
-    await writeClient.create({
+    await client.create({
       _type: "subscriber",
       name: trimmedName,
       email: trimmedEmail,
@@ -45,9 +47,12 @@ export async function POST(request: NextRequest) {
     });
 
     return NextResponse.json({ success: true });
-  } catch {
+  } catch (err: unknown) {
+    const message =
+      err instanceof Error ? err.message : "Unknown error";
+    console.error("Subscribe error:", message);
     return NextResponse.json(
-      { error: "Something went wrong. Please try again." },
+      { error: message },
       { status: 500 }
     );
   }
