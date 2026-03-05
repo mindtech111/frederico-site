@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "cf:build": "npx opennextjs-cloudflare build",
+    "pages:build": "npx opennextjs-cloudflare build",
     "preview": "npx opennextjs-cloudflare build && wrangler dev",
     "deploy": "npx opennextjs-cloudflare build && wrangler deploy"
   },
