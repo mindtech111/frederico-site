@@ -7,6 +7,20 @@ import { urlFor } from "@/sanity/image";
 import PortableTextRenderer from "@/components/PortableTextRenderer";
 import { type Locale } from "@/i18n/config";
 
+function getEmbedUrl(url: string): string {
+  // YouTube: https://www.youtube.com/watch?v=ID or https://youtu.be/ID
+  const ytMatch = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&?/]+)/);
+  if (ytMatch) {
+    return `https://www.youtube.com/embed/${ytMatch[1]}`;
+  }
+  // Vimeo: https://vimeo.com/ID
+  const vimeoMatch = url.match(/vimeo\.com\/(\d+)/);
+  if (vimeoMatch) {
+    return `https://player.vimeo.com/video/${vimeoMatch[1]}`;
+  }
+  return url;
+}
+
 export default async function WorkDetailPage({
   params,
 }: {
@@ -36,26 +50,25 @@ export default async function WorkDetailPage({
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-6">
         {/* Image */}
         <div>
-          {work.mainImage ? (
-            work.category === "videos" && work.videoUrl ? (
-              <div className="aspect-video w-full">
-                <iframe
-                  src={work.videoUrl.replace("vimeo.com/", "player.vimeo.com/video/").replace("youtube.com/watch?v=", "youtube.com/embed/")}
-                  className="w-full h-full"
-                  allow="autoplay; fullscreen"
-                  allowFullScreen
-                />
-              </div>
-            ) : (
-              <Image
-                src={urlFor(work.mainImage).width(1200).quality(90).url()}
-                alt={title}
-                width={1200}
-                height={900}
-                className="w-full h-auto"
-                priority
+          {work.category === "videos" && work.videoUrl ? (
+            <div className="aspect-video w-full">
+              <iframe
+                src={getEmbedUrl(work.videoUrl)}
+                className="w-full h-full"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                title={title}
               />
-            )
+            </div>
+          ) : work.mainImage ? (
+            <Image
+              src={urlFor(work.mainImage).width(1200).quality(90).url()}
+              alt={title}
+              width={1200}
+              height={900}
+              className="w-full h-auto"
+              priority
+            />
           ) : null}
 
           {/* Additional gallery images */}
