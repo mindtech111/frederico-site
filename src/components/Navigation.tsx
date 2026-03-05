@@ -30,7 +30,7 @@ export default function Navigation({ locale }: Props) {
     { key: "drawings", href: "/works/drawings" },
     { key: "sculptures", href: "/works/sculptures" },
     { key: "photography", href: "/works/photography" },
-    { key: "prints", href: "/works/prints" },
+    { key: "prints", href: "/works/installations" },
     { key: "videos", href: "/works/videos" },
   ] as const;
 

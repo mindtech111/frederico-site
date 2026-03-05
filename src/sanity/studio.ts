@@ -40,7 +40,7 @@ export const studioConfig = defineConfig({
                       { title: "Drawings", value: "drawings" },
                       { title: "Sculptures", value: "sculptures" },
                       { title: "Photography", value: "photography" },
-                      { title: "Prints", value: "prints" },
+                      { title: "Installations", value: "installations" },
                       { title: "Videos", value: "videos" },
                     ].map(({ title, value }) =>
                       S.listItem()

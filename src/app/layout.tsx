@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: "%s | Frederico Theophilo Neto",
   },
   description:
-    "Visual artist working across painting, drawing, sculpture, photography, prints, and video.",
+    "Visual artist working across painting, drawing, sculpture, photography, installations, and video.",
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_BASE_URL || "https://fredericotheophiloneto.com"
   ),
