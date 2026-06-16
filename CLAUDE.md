@@ -40,4 +40,5 @@ env PATH="/Users/marcoscantoni/.nvm/versions/node/v20.20.0/bin:$PATH" sh -c 'cd 
 
 ## Deployment notes
 - **Live deploy is `npm run deploy`** (wrangler → Cloudflare Workers). It does **not** go through GitHub — Cloudflare auth (`wrangler login` / `CLOUDFLARE_API_TOKEN`) is what deploys, separate from any GitHub token.
-- **`git push`** is for code history only. Auth is via macOS Keychain (`credential.helper osxkeychain`); the token is **not** stored in the git remote URL — keep it that way (this repo lives on iCloud Drive, so never embed credentials in `.git/config`).
+- **`git push`** is for code history only. Auth is via the **GitHub CLI** (`gh auth setup-git`, helper `!gh auth git-credential`) — gh is logged in as `mindtech111`. The token is **not** stored in the git remote URL — keep it that way (this repo lives on iCloud Drive, so never embed credentials in `.git/config`).
+- The classic PAT "frederico-site deploy" is **not needed** (git uses the gh OAuth token; deploy uses Cloudflare/wrangler). It can be deleted to stop GitHub's recurring expiry emails.
